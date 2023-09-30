@@ -1,10 +1,14 @@
 main{
-    min-height: 75vh;
+    min-height: 85vh;
+    background-color: darkgray;
 
 }
 header{
-    min-height: 20vh;
+    min-height: 10vh;
 }
 footer{
     min-height: 5vh;
+}
+#carouselExample{
+    min-height: 25vh;  
 }
