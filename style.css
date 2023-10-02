@@ -9,6 +9,8 @@ header{
 footer{
     min-height: 5vh;
 }
-#carouselExample{
-    min-height: 25vh;  
+.carousel-item{
+    max-height: 25vh;
+
+
 }
