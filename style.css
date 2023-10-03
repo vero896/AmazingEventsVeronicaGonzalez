@@ -11,6 +11,7 @@ footer{
 }
 .carousel-item{
     max-height: 25vh;
+background-position-y: 25%;
 
 
 }
