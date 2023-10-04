@@ -11,7 +11,11 @@ footer{
 }
 .carousel-item{
     max-height: 25vh;
-background-position-y: 25%;
+    
+}
+    
 
+    .form-control me-2{
+        min-width: 20vw;
 
 }
