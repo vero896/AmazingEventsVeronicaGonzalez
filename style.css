@@ -1,6 +1,6 @@
 main{
     min-height: 85vh;
-    background-color: darkgray;
+    background-color: rgb(227, 222, 222);
 
 }
 header{
@@ -10,12 +10,15 @@ footer{
     min-height: 5vh;
 }
 .carousel-item{
-    max-height: 25vh;
+   
+
+  max-height: 25vh;
+
     
 }
     
 
-    .form-control me-2{
-        min-width: 20vw;
-
+.checkpointBusqueda{
+   
+ 
 }
