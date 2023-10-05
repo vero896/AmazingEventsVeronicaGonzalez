@@ -1,21 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Amanzing Events</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="./index.js"></script>
 </head>
+
 <body>
-</div> <div class="card" style="width: 18rem;">
-    <img src="./marathon.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">10K for life</h5>
-        <p class="card-text">Enjoy your favorite dishes from different countries in a unique event for the whole family.</p>
-    </div>
-   
-    <div class="card-body">
-        <span> Precio: 3</span>
-        <a href="./details.html" class="card-link btn btn-dark">details</a>
-    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container ">
+                <img src="./amazing_brand.png" alt="Logo" width="80" height="24" class="d-inline-block align-text-top">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup ">
+                    <div class="navbar-nav d-flex p-2 flex-grow-1 justify-content-end ">
+                        <a class="nav-link active border border border-info rounded m-2" aria-current="page"
+                            href="./index.html">Home</a>
+                        <a class="nav-link border border border-info rounded m-2" href="#">Up
+                            Comming Events</a>
+                        <a class="nav-link border border border-info rounded m-2" href="./pastevents.html">Past
+                            Events</a>
+                        <a class="nav-link border border border-info rounded m-2" href="./contact.html">Contac</a>
+                        <a class="nav-link border border border-info rounded m-2" href="./stats.html">Stat</a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="d-flex flex-column ">
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+                <div class="carousel-item active w-100 h-25">
+                    <img src="./optional_banner_1.jpg" class="d-block w-100 " alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./optional_banner_2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./optional_banner_3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./optional_banner_4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./optional_banner_5.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="d-flex justify-content-between p-2" >
+            
+            
+                <div class="form-check form-check-inline ">
+                    <input class="form-check-input " type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Food</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2"> Art and Entertainment</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">Music and Cinema</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">Sports</label>
+                </div>
+                
+                    <form class="d-flex justify-content-end" role="search">
+                        <input class="form-control me-2 w-75" type="search"  aria-label="Buscar">
+                        <button class="figure-img" type="submit">Buscar</button>
+                    </form>
+                
+            
+            
+        </div>
+        <div class="d-flex justify-content-center p-2 gap-2 flex-wrap">
+            <div class="card" style="width: 18rem; ">
+                <img src="./food_fair.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Festival of the collectivities</h5>
+                    <p class="card-text">Enjoy your favorite dishes from different countries in a unique event for
+                        the whole family.</p>
+                </div>
+
+                <div class="card-body">
+                    <span> Precio: 5</span>
+                    <a href="./details.html" class="card-link btn btn-dark">details</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./outing_to_the_museum.jpg" class="card-img-top" alt="...">
+                <div class="card-body ">
+                    <h5 class="card-title">Art Exhibition</h5>
+                    <p class="card-text">Let's go to the art museum for an incredible tour to learn about the
+                        largest dinosaurs.</p>
+                </div>
+
+                <div class="card-body">
+                    <span> Precio: 15</span>
+                    <a href="./details.html" class="card-link btn btn-dark">details</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./costume_party.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Halloween Night</h5>
+                    <p class="card-text">Come in your scariest costume character to win amazing prizes</p>
+                </div>
+
+                <div class="card-body">
+                    <span> Precio: 12</span>
+                    <a href="./details.html" class="card-link btn btn-dark">details</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./music_concert.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Metallica in concert</h5>
+                    <p class="card-text">The only concert of the most emblematic band in the world</p>
+                </div>
+
+                <div class="card-body">
+                    <span> Precio: 150</span>
+                    <a href="./details.html" class="card-link btn btn-dark">details</a>
+                </div>
+
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./marathon.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">10K for life</h5>
+                    <p class="card-text">Enjoy your favorite dishes from different countries in a unique event for
+                        the
+                        whole family.</p>
+                </div>
+
+                <div class="card-body">
+                    <span> Precio: 3</span>
+                    <a href="./details.html" class="card-link btn btn-dark">details</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./books.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">School Book Fair</h5>
+                    <p class="card-text">Bring your unused school book and bring the one you need.</p>
+                </div>
+
+                <div class="card-body">
+                    <span> Precio: 1</span>
+                    <a href="./details.html" class="card-link btn btn-dark">details</a>
+                </div>
+
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./cinema.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Avengers</h5>
+                    <p class="card-text">Marvel's Avengers 3d premiere the start of an epic saga with your best
+                        superheroes</p>
+                </div>
+
+                <div class="card-body">
+                    <span> Precio: 250</span>
+                    <a href="./details.html" class="card-link btn btn-dark">details</a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <footer class=" d-flex justify-content-star align-items-center bg-body-tertiary text-warning">
+        <div class="container ">
+            <img class="m-2 " src="./whatsapp.png" alt="wt">
+            <img class="m-2" src="./instagram.png" alt="ig">
+            <img class="m-2" src="./facebook.png" alt="fb">
+        </div>
+        <div class="d-flex">
+            <span class="align-self-end w-25">By Veronica Gonzalez</span>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
