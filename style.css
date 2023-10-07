@@ -4,7 +4,7 @@ main{
 
 }
 header{
-    min-height: 10vh;
+   min-height: 10vh;
 }
 footer{
     min-height: 5vh;
@@ -13,13 +13,22 @@ footer{
 
 
 .carousel-inner img {
-    width: 100%;
+    
     max-height: 100px;
+        object-fit:cover;
+        
+       
+    }
+
     
   
-}
+
 .imagen1, .imagen2, .imagen3  {
     width: 50px;
+}
+.table{
+    max-width: 75vw;
+    max-height: 100vh;
 }
 
 
