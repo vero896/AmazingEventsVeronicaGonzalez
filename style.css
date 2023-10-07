@@ -11,18 +11,17 @@ footer{
 }
 
 
-.carousel-inner{
-    
-}
+
 .carousel-inner img {
     width: 100%;
     max-height: 100px;
     
   
 }
-#imagenesRedes{
+.imagen1, .imagen2, .imagen3  {
     width: 50px;
 }
+
 
     
 
