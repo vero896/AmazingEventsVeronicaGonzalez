@@ -1,37 +1,38 @@
-main{
+main {
     min-height: 85vh;
     background-color: rgba(224, 224, 224, 0.989);
 
 }
-header{
-   min-height: 10vh;
+
+header {
+    min-height: 10vh;
 }
-footer{
+
+footer {
     min-height: 5vh;
 }
-
-
+.imgCard{
+    height: 50%;
+}
+/*.card-body{
+    height: 50%;
+}*/
 
 .carousel-inner img {
-    
+
     max-height: 100px;
-        object-fit:cover;
-        
-       
-    }
+    object-fit: cover;
 
-    
-  
 
-.imagen1, .imagen2, .imagen3  {
-    width: 50px;
 }
-.table{
+
+
+
+
+/*.imagen1, .imagen2, .imagen3  {
+    width: 50px;
+}*/
+.table {
     max-width: 75vw;
     max-height: 100vh;
 }
-
-
-    
-
-
