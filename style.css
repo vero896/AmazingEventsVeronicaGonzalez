@@ -12,11 +12,13 @@ footer {
     min-height: 5vh;
 }
 .imgCard{
-    height: 50%;
+    height: 45%;
 }
-/*.card-body{
-    height: 50%;
-}*/
+.card-body{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
 
 .carousel-inner img {
 

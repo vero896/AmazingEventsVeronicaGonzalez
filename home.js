@@ -11,11 +11,11 @@ for (const itemCards of information) {
     card.innerHTML = `
     
     <img src= ${itemCards.image} class="card-img-top imgCard" alt="...">
-    <div class="card-body text-bg-info h-35   ">
+    <div class="card-body p-3  text-bg-info ">
     <h5 class="card-title text-center">${itemCards.name}</h5>
-    <p class="card-text text-center">${itemCards.description} </p>
+    <p class="card-text text-justify">${itemCards.description} </p>
     </div> 
-    <div class="card-body d-flex justify-content-between border border-info rounded-bottom h-15">
+    <div class="card-bodyprice d-flex justify-content-around border border-info rounded-bottom p-3 ">
    <span> Precio: ${itemCards.price}</span>
    <a href="./details.html" class="card-link btn btn-dark">Details</a>
     </div> 
