@@ -12,7 +12,7 @@ for (const itemCardsUp of upcomming) {
     cardUp.style.width = "18rem "
     cardUp.innerHTML = `
     
-    <img src= ${itemCardsUp.image} class="card-img-top h-50" alt="...">
+    <img src= ${itemCardsUp.image} class="card-img-top h-50 imgCard" alt="...">
     <div class="card-body text-bg-success h-40">
     <h5 class="card-title text-center">${itemCardsUp.name}</h5>
     <p class="card-text text-center">${itemCardsUp.description} </p>
