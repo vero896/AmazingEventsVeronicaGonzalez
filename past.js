@@ -2,7 +2,7 @@ console.log("hola");
 const pastEvents = data.events
 const contenedorPast = document.getElementById("PastCards")
 const currentDate = "2023-01-01"
-
+function paintCards(arrayCard) {
 for (const itemCardsPast of pastEvents) {
     if (itemCardsPast.date <=  currentDate) {
         
@@ -19,9 +19,11 @@ for (const itemCardsPast of pastEvents) {
     </div> 
     <div class="card-bodyprice d-flex justify-content-around border border-danger rounded-bottom p-3">
    <span> Precio: ${itemCardsPast.price}</span>
-   <a href="./details.html" class="card-link btn btn-dark">Details</a>
+   <a href="../details.html?_id=${itemCardsPast._id}" class="card-link btn btn-dark">Details</a>
     </div> 
     `
     contenedorPast.appendChild(cardPast)
 }
 }
+}
+paintCards(pastEvents)

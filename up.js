@@ -19,7 +19,7 @@ for (const itemCardsUp of upcomming) {
     </div> 
     <div class="card-bodyprice d-flex justify-content-around border border-success rounded-bottom p-3">
    <span> Precio: ${itemCardsUp.price}</span>
-   <a href="./details.html" class="card-link btn btn-dark">Details</a>
+   <a href="./details.html?_id=${itemCards._id}" class="card-link btn btn-dark">Details</a>
     </div> 
     `
     contenedorUp.appendChild(cardUp)

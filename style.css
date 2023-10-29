@@ -28,13 +28,16 @@ footer {
 
 }
 
-
-
-
-/*.imagen1, .imagen2, .imagen3  {
-    width: 50px;
-}*/
 .table {
     max-width: 75vw;
     max-height: 100vh;
+}
+#contenedorCheckbox{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+#contenedordetail{
+    display: flex;
 }
