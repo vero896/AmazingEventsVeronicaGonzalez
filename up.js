@@ -95,7 +95,7 @@ function paintCards(arrayEventos) {
     }
 }
 contenedorCheckboxUp.addEventListener("change", () => {
-    let filtro = filtrarEventos(pastEvents)
+    let filtro = filtrarEventos(upcomming)
     paintCards(filtro)
 
 })

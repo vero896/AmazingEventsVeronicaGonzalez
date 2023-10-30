@@ -21,7 +21,7 @@ function paintCards(arrayCard) {
       <p class="card-text">Category:${arrayCard.category}</p>
      <p class="card-text">Place:${arrayCard.place}</p>
       <p class="card-text">Capacity: ${arrayCard.capacity}</p>
-       <p class="card-text">Assistance: ${(arrayCard.assistance)}</p>
+       
       <p class="card-text">Price:${arrayCard.price}</p>
      <p class="card-text">Estimate:${arrayCard.estimate}</p> 
   `
@@ -30,3 +30,7 @@ function paintCards(arrayCard) {
 
 
 paintCards(eventSearch)
+
+
+
+
