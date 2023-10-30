@@ -124,7 +124,7 @@ function paintCards(arrayEventos) {
       })
       
     function superFiltro(arrayEventos){
-        let filtro = filtrarCountrys(arrayEventos) 
+        let filtro = filtrarEventos(arrayEventos) 
         let filtro2 = filtrarPorTexto(filtro1)
         paintCards(filtro2)
     }

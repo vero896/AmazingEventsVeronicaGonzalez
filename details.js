@@ -4,31 +4,29 @@ const eventsDetails = data.events
 let eventSearch = eventsDetails.find(search => search._id == id)
 const contenedorDetails = document.getElementById("contenedorDetails")
 
+function paintCards(arrayCard) {
+    
+
+      const card = document.createElement("div")
+
+      card.classList.add("card")
+      card.style.width = "25rem "
+      card.innerHTML = `
+      <img src="${arrayCard.image} alt="...">
+       
+      <div class="card-body bg-dark-subtle text-emphasis-ligth border border-dark rounded-bottom p-3 " >
+        <h5 class="card-title text-center"> ${arrayCard.name}</h5>
+     <p class="card-text">Date: ${arrayCard.date}</p>
+     <p class="card-text">${arrayCard.description}</p>
+      <p class="card-text">Category:${arrayCard.category}</p>
+     <p class="card-text">Place:${arrayCard.place}</p>
+      <p class="card-text">Capacity: ${arrayCard.capacity}</p>
+       <p class="card-text">Assistance: ${(arrayCard.assistance)}</p>
+      <p class="card-text">Price:${arrayCard.price}</p>
+     <p class="card-text">Estimate:${arrayCard.estimate}</p> 
+  `
+      contenedorDetails.appendChild(card)
+  }
 
 
-
-const card = document.createElement("div")
-
-  card.classList.add("card")
-  card.style.width = ("25rem")
-  card.innerHTML = `
-  <img src="${search.image} alt="...">
-
-                  
- <div class="card-body" >
-   <h5 class="card-title text-center"> ${search.name}</h5>
-<p class="card-text">Date:${search.date}</p>
-<p class="card-text">${search.description}</p>
- <p class="card-text">Category:${search.category}</p>
-<p class="card-text">Place:${search.place}</p>
- <p class="card-text">Capacity: ${search.capacity}</p>
-  <p class="card-text">Assistance: ${(search.assistance)}</p>
- <p class="card-text">Price:${search.price}</p>
-<p class="card-text">Estimate:${search.estimate}</p>  `
-  contenedorDetails.appendChild(card)
-
-
-
-
-}
 paintCards(eventSearch)
