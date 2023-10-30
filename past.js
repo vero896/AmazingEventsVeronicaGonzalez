@@ -81,7 +81,7 @@ function paintCards(arrayEventos) {
         contenedorPast.innerHTML = " "
 
         arrayEventos.forEach(newEvent => {
-          
+            if(newEvent.date >= currentDate){
                 const card = document.createElement("div")
                 card.classList.add("card")
                 card.style.width = "18rem "
@@ -99,11 +99,11 @@ function paintCards(arrayEventos) {
         `
                 contenedorPast.appendChild(card)
                 
-            })
+            }})}
 
     
 }
-      }
+      
     
 contenedorCheckboxPast.addEventListener("change", () => {
     let filtro = filtrarEventos(pastEvents)

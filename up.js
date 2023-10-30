@@ -25,13 +25,14 @@ function paintCards(arrayCard) {
     </div> 
     <div class="card-bodyprice d-flex justify-content-around border border-success rounded-bottom p-3">
    <span> Precio: ${itemCardsUp.price}</span>
-   <a href="./details.html?_id=${itemCards._id}" class="card-link btn btn-dark">Details</a>
+   <a href="./details.html?_id=${itemCardsUp._id}" class="card-link btn btn-dark">Details</a>
     </div> 
     `
             contenedorUp.appendChild(cardUp)
         }
     }
 }
+
 paintCards(upcomming)
 
 function pintarChecks(arrayCheck) {
@@ -52,6 +53,7 @@ function filtrarEventos(arrayEventos) {
     let checked = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(checkbox => checkbox.value)
 
     let eventosFiltrado = []
+    console.log(eventosFiltrado);
     arrayEventos.forEach(e => {
         checked.forEach(eventoEncontrado => {
             if (eventoEncontrado == e.category.replace(" ", "-")) {
@@ -70,11 +72,13 @@ function filtrarTexto(arrayEventos) {
     return arrayEventos.filter(evento => evento.category.toLowerCase().includes(buscador.value.toLowerCase()))
 }
 function paintCards(arrayEventos) {
+    
     if (arrayEventos.length == 0) {
         contenedorUp.innerHTML = `<h3>La categoria no existe, intentalo de nuevo </h3>`
     } else {
         contenedorUp.innerHTML = " "
-        arrayEventos.forEach(newEvent => {
+        arrayEventos.forEach(newEvent =>  {
+           if(newEvent.date >= currentDate){
 
             const card = document.createElement("div")
             card.classList.add("card")
@@ -91,9 +95,10 @@ function paintCards(arrayEventos) {
         </div> 
         `
             contenedorUp.appendChild(card)
-        })
+        }})}
+    
     }
-}
+
 contenedorCheckboxUp.addEventListener("change", () => {
     let filtro = filtrarEventos(upcomming)
     paintCards(filtro)
