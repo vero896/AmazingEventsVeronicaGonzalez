@@ -1,8 +1,6 @@
 export const apiUrl = "https://mindhub-xj03.onrender.com/api/amazing"
 const contenedor = document.getElementById("contenedorCards")
 const buscador = document.getElementById("buscador")
-export 
-
 export const contenedorCheckbox = document.getElementById("contenedorCheckbox")
 
 export function pintarChecks(arrayCheck) {
@@ -57,7 +55,7 @@ export function paintCards(arrayEventos) {
         </div> 
         <div class="card-bodyprice d-flex justify-content-around border border-info rounded-bottom p-3 ">
        <span> Precio: ${newEvent.price}</span>
-       <a href="../page/details.html?_id=${newEvent._id}" class="card-link btn btn-dark">Details</a>
+       <a href="../pages/details.html?_id=${newEvent._id}" class="card-link btn btn-dark">Details</a>
         </div> 
         `
 
@@ -241,6 +239,7 @@ export function crearTable3(stadisticas) {
 export function crearDetails(arrayCard) {
     const urlParams = new URLSearchParams(window.location.search);
     const contenedorDetails = document.getElementById("contenedorDetails")
+    const _id = urlParams.get('_id')
     arrayCard.find(car => {
         if (car._id == _id) {
 
@@ -252,21 +251,21 @@ export function crearDetails(arrayCard) {
       <div class=" card mb-3 style= max-width: 540px;">
   
    
-       <img src=${arrayCard.image} style="max-width: 300px class = card-img h-100 img-fluid alt="...">
+       <img src=${car.image} style="max-width: 300px class = card-img h-100 img-fluid alt border-dark="...">
        </div>
       
       <div class="card-body  bg-dark-subtle text-emphasis-ligth border border-dark rounded-bottom p-3 " >
-          <h5 class="card-title text-center"> ${arrayCard.name}</h5>
-          <p class="card-text">Date: ${arrayCard.date}</p>
-         <p class="card-text">${arrayCard.description}</p>
-        <p class="card-text">Category:${arrayCard.category}</p>
-        <p class="card-text">Place:${arrayCard.place}</p>
-        <p class="card-text">Capacity: ${arrayCard.capacity}</p>
-        <p class="card-text"> ${arrayCard.assistance == null ? "Estimate: " + arrayCard.estimate : "Assistance: " + arrayCard.assistance}</p>
-        <p class="card-text">Price:${arrayCard.price}</p>
+          <h5 class="card-title text-center"> ${car.name}</h5>
+          <p class="card-text">Date: ${car.date}</p>
+         <p class="card-text">${car.description}</p>
+        <p class="card-text">Category:${car.category}</p>
+        <p class="card-text">Place:${car.place}</p>
+        <p class="card-text">Capacity: ${car.capacity}</p>
+        <p class="card-text"> ${car.assistance == null ? "Estimate: " + car.estimate : "Assistance: " + car.assistance}</p>
+        <p class="card-text">Price: $${car.price}</p>
         </div>
         
-  `
+               `
             contenedorDetails.appendChild(card)
         }
 
